@@ -1,0 +1,59 @@
+@import "variables";
+
+@mixin body-default{
+    background: $background-default;
+    color: white;
+}
+
+@mixin  header-default{
+    height: $header-default-size;
+}
+
+@mixin  main-default {
+    height: $main-default-size;
+    min-height: $main-default-size;
+    width: $main-default-width;
+    margin: 0 auto;
+    margin-bottom: $header-default-size;
+    z-index: 200;
+    position: relative;
+}
+
+@mixin footer-default{
+    position: fixed;
+    height: $footer-default-size;
+    width: $footer-default-width;
+    z-index: 200;
+    bottom: 0;
+    text-align: center;
+}
+
+@mixin panel{
+    border-image-source: url(../images/panel.png);
+    border-image-slice: 40 30 fill;
+    border-image-width: 40px 30px;
+}
+
+@mixin scroll{
+    /* width */
+    ::-webkit-scrollbar {
+        width: 20px;
+    }
+    
+    /* Track */
+    ::-webkit-scrollbar-track {
+        box-shadow: none; 
+        border-radius: 10px;
+    }
+    
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background:#0e6676; 
+        border-radius: 10px;
+    }
+    
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: darken($color: #0e6676, $amount: 7); 
+    }
+}
