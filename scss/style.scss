@@ -22,6 +22,8 @@
             padding-left: 10%;
             padding-right: 10%;
             height: 75%;
+            -ms-overflow-style: none;  /* IE and Edge */
+            scrollbar-width: none;  /* Firefox */
 
             &.certificados{
                 overflow-y: scroll;
@@ -137,10 +139,16 @@
 
         .div-button{
             position: absolute;
-            bottom: 5%;
-            right: 5%;
             text-align: center;
+            bottom: 5%;
             cursor: pointer;
+
+            &.right{
+                right: 5%;
+            }
+            &.left{
+                left: 5%;
+            }
 
             &:hover{
                 text-shadow: 0 0 20px rgba(255,255,255,.6);

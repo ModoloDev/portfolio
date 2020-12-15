@@ -3314,7 +3314,8 @@ img {
     padding-top: 25%; } }
 /* width */
 ::-webkit-scrollbar {
-  width: 20px; }
+  width: 20px;
+  display: none; }
 
 /* Track */
 ::-webkit-scrollbar-track {
@@ -3355,7 +3356,11 @@ img {
       padding: 5%;
       padding-left: 10%;
       padding-right: 10%;
-      height: 75%; }
+      height: 75%;
+      -ms-overflow-style: none;
+      /* IE and Edge */
+      scrollbar-width: none;
+      /* Firefox */ }
       .mid .content .page.certificados {
         overflow-y: scroll; }
     .mid .content .skills {
@@ -3426,10 +3431,13 @@ img {
       line-height: 100%; }
     .mid .content .div-button {
       position: absolute;
-      bottom: 5%;
-      right: 5%;
       text-align: center;
+      bottom: 5%;
       cursor: pointer; }
+      .mid .content .div-button.right {
+        right: 5%; }
+      .mid .content .div-button.left {
+        left: 5%; }
       .mid .content .div-button:hover {
         text-shadow: 0 0 20px rgba(255, 255, 255, 0.6);
         transform: translateX(15%); }
