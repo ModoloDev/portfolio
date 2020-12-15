@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAAA,WAAW;AACX,mBAAoB;EAChB,KAAK,EAAE,IAAI;;AAGb,WAAW;AACX,yBAA0B;EACxB,UAAU,EAAE,OAAO;;AAGrB,YAAY;AACZ,yBAA0B;EACxB,UAAU,EAAE,IAAI;;AAGlB,qBAAqB;AACrB,+BAAgC;EAC9B,UAAU,EAAE,IAAI",
-"sources": ["../scss/scroll.scss"],
-"names": [],
-"file": "scroll.css"
-}
