@@ -43,7 +43,7 @@
   pointer-events: none; }
 
 .stars {
-  background: url(../images/overlay_stars.svg);
+  background: url(../../../../images/overlay_stars.svg);
   background-repeat: repeat;
   background-size: contain;
   background-position: left top; }
@@ -165,5 +165,3 @@
 
   .central-body {
     padding-top: 25%; } }
-
-/*# sourceMappingURL=space-objects.css.map */
