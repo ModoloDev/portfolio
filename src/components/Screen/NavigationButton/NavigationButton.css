@@ -1,0 +1,31 @@
+main .content .navigation {
+    all: unset;
+    position: absolute;
+    text-align: center;
+    bottom: 5%;
+    cursor: pointer;
+}
+
+main .content .navigation.next {
+    right: 5%;
+}
+
+main .content .navigation.prev {
+    left: 5%;
+}
+
+main .content .navigation:hover {
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.6);
+}
+
+main .content .navigation.prev:hover {
+    transform: translateX(-15%);
+}
+
+main .content .navigation.next:hover {
+    transform: translateX(15%);
+}
+
+main .content .navigation .icon {
+    font-size: 3rem;
+}

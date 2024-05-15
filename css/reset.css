@@ -4,7 +4,7 @@
   src: url(../font/burbank-big-condensed-bold.otf); }
 @font-face {
   font-family: SF-Fourche;
-  src: url(../fonts/SFFourche.ttf); }
+  src: url(../public/fonts/SFFourche.ttf); }
 html {
   height: 100%; }
 
