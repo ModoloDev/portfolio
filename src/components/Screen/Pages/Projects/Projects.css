@@ -1,0 +1,22 @@
+main .content .projects {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+}
+
+main .content .projects .projectDiv {
+    text-align: center;
+    transition: all .1s;
+    width: 33%;
+}
+
+main .content .projects .projectDiv:hover {
+    transform: scale(1.05);
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.6);
+}
+
+main .content .projects .projectDiv .imgProjects {
+    width: 100%;
+}

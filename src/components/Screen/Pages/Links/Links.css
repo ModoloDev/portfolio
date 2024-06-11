@@ -1,0 +1,23 @@
+.links {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+    position: relative;
+}
+
+.links .link {
+    all: unset;
+    cursor: pointer;
+    text-align: center;
+    transition: all .1s;
+}
+
+.links .link:hover {
+    transform: scale(1.1);
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.6);
+}
+
+.links .link .iconsLinks {
+    font-size: 3.5rem;
+}

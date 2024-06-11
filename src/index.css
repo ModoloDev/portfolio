@@ -1,0 +1,24 @@
+:root {
+  font-family: SFFourcheBold, Montserrat, serif;
+  line-height: 100%;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  background: url(/space.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  color: white;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@font-face {
+  font-family: 'SFFourcheBold';
+  src: local('SFFourcheBold'), url(/fonts/SFFourcheBold.ttf) format('opentype');
+}
