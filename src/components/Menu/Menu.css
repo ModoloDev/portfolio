@@ -12,6 +12,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .menu button {
@@ -20,13 +21,14 @@
     transition: all 0.5s;
     margin-bottom: -1px;
     display: block;
-    font-size: 1.5em;
+    font-size: 1.25rem;
     margin-block-start: 0.83em;
     margin-block-end: 0.83em;
     margin-inline-start: 0;
     margin-inline-end: 0;
     font-weight: bold;
     unicode-bidi: isolate;
+    text-transform: uppercase;
 }
 
 .menu button:hover {

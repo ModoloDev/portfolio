@@ -2,6 +2,12 @@ import SpaceObjects from "../SpaceObjects/SpaceObjects.tsx";
 import Menu from "../Menu/Menu.tsx";
 import {Screen} from "../Screen/Screen.tsx";
 import React, {useState} from "react";
+import {ABOUT_ME_PAGE} from "../Screen/Pages/AboutMe/ABOUT_ME_PAGE.tsx";
+import {SKILLS_PAGE} from "../Screen/Pages/Skills/SKILLS_PAGE.tsx";
+import {LANGUAGES_PAGE} from "../Screen/Pages/Languages/LANGUAGES_PAGE.tsx";
+import {CERTIFICATES_PAGE} from "../Screen/Pages/Certificates/CERTIFICATES_PAGE.tsx";
+import {LINKS_PAGE} from "../Screen/Pages/Links/LINKS_PAGE.tsx";
+
 
 export type PAGE = {
   title: string
@@ -16,54 +22,28 @@ export type SCREEN = {
 const INITIAL_SCREEN: SCREEN = {
   active: 0,
   pages: [
-    {
-      title: 'ABOUT ME',
-      content: <>
-        Hi, my name is Lucas.
-        I'm a skilled Software Engineer with over {new Date().getFullYear() - 2021} years in backend development, specializing in Java
-        Core and Java frameworks like Spring Boot and Quarkus. Skilled in cloud technologies with AWS
-        and Azure, I have a strong grasp of Design Patterns, SOLID principles, Clean Architecture and
-        DDD (Domain-Driven Design), ensuring high-quality, scalable, and maintainable code. My
-        technical proficiency and strategic approach to cloud infrastructure have driven significant
-        improvements in system performance and reliability.
-      </>
-    },
-    {
-      title: 'SKILLS',
-      content: <></>
-    },
-    {
-      title: 'LANGUAGES',
-      content: <></>
-    },
-    {
-      title: 'PROJECTS',
-      content: <></>
-    },
-    {
-      title: 'CERTIFICATES',
-      content: <></>
-    },
-    {
-      title: 'LINKS',
-      content: <></>
-    }
+    ABOUT_ME_PAGE,
+    SKILLS_PAGE,
+    LANGUAGES_PAGE,
+    // PROJECTS_PAGE,
+    CERTIFICATES_PAGE,
+    LINKS_PAGE
   ]
 }
 
 function App() {
-  const [pages, setPages] = useState(INITIAL_SCREEN)
+  const [screen, setScreen] = useState(INITIAL_SCREEN)
 
   function changePage(page: number) {
-    setPages(prevState => {
+    setScreen(prevState => {
       return {...prevState, active: page}
     })
   }
 
   return (
     <>
-      <Screen screen={pages} changePage={changePage}/>
-      <Menu pages={pages} changePage={changePage}/>
+      <Screen screen={screen} changePage={changePage}/>
+      <Menu screen={screen} changePage={changePage}/>
       <SpaceObjects/>
     </>
   )

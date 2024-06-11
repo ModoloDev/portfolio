@@ -1,0 +1,22 @@
+.skills {
+    position: relative;
+    height: 100%;
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.skills .skill {
+    text-align: center;
+    transition: all .1s;
+    flex-basis: 33%;
+    font-size: 4rem;
+}
+
+
+.skills .iconsSkills:hover {
+    transform: scale(1.1);
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.6);
+}

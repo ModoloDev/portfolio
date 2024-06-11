@@ -1,6 +1,6 @@
 import './Screen.css'
-import Page from "./Pages/Page.tsx";
 import {SCREEN} from "../App/App.tsx";
+import NavigationButton from "./NavigationButton/NavigationButton.tsx";
 
 type Props = {
   screen: SCREEN
@@ -8,19 +8,17 @@ type Props = {
 }
 
 export function Screen({screen, changePage}: Props) {
-  const page = screen.pages[screen.active]
+  const pageIndex = screen.active;
+  const page = screen.pages[pageIndex]
+
   return (
     <main>
       <section className='content'>
-        <Page
-          key={page.title}
-          changePage={changePage}
-          hasPrev={screen.active != 0}
-          hasNext={screen.active < screen.pages.length - 1}
-          page={screen.active}
-        >
+        <section className='animate__animated animate__fadeIn page'>
           {page.content}
-        </Page>
+          {screen.active != 0 && <NavigationButton direction='prev' changePage={() => changePage(pageIndex - 1)}/>}
+          {screen.active < screen.pages.length - 1 && <NavigationButton direction='next' changePage={() => changePage(pageIndex + 1)}/>}
+        </section>
       </section>
     </main>
   );

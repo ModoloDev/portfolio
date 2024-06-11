@@ -1,0 +1,15 @@
+.aboutMe {
+    text-align: left;
+}
+
+.paragraph:first-line {
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.6);
+    font-size: 1.75rem;
+}
+
+.paragraph {
+    white-space: pre-line;
+    font-size: 1.25rem;
+    line-height: 100%;
+    display: inline-block;
+}
