@@ -1,4 +1,3 @@
-import SpaceObjects from "../SpaceObjects/SpaceObjects.tsx";
 import Menu from "../Menu/Menu.tsx";
 import {Screen} from "../Screen/Screen.tsx";
 import React, {useState} from "react";
@@ -44,7 +43,6 @@ function App() {
     <>
       <Screen screen={screen} changePage={changePage}/>
       <Menu screen={screen} changePage={changePage}/>
-      <SpaceObjects/>
     </>
   )
 }
