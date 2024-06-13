@@ -1,20 +1,20 @@
 main {
-    padding: 2rem;
     text-align: center;
 
-    height: 55vh;
-    width: 65%;
-    margin: 13vh auto 0;
     z-index: 200;
     position: relative;
-    border-image: url(../../assets/panel.png) 40 30 fill / 40px 30px;
-    border-color: white;
     overflow: hidden;
 }
 
 main .content {
+    padding: 2rem;
+    margin: 13vh auto 0;
+    height: 55vh;
+    width: 65%;
     position: relative;
-    height: 100%;
+    /*border-image: url(../../assets/panel.png) 40 30 fill / 40px 30px;*/
+    -webkit-border-image: url(../../assets/panel.png) 40 30 fill / 40px 30px;
+    border-color: white;
 }
 
 .page {
