@@ -4,6 +4,7 @@
     justify-content: space-around;
     height: 100%;
     position: relative;
+    flex-wrap: wrap;
 }
 
 .links .link {

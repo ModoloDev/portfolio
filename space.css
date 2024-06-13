@@ -212,9 +212,3 @@
     transition: ease 200s !important;
     transform: rotate(-3600deg) !important;
 }
-
-@media only screen and (max-width: 600px) {
-    .box_astronaut {
-        top: 70%;
-    }
-}
