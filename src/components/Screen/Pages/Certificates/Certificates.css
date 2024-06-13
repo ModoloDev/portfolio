@@ -4,7 +4,7 @@
     flex-wrap: wrap;
     align-content: center;
     position: relative;
-    height: 100%;
+    align-items: center;
 }
 
 .certificates .certificate {
